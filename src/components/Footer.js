@@ -8,7 +8,8 @@ function Footer() {
         <div className="footer-left">
           <h3>About Us</h3>
           <p>
-            We are a passionate team committed to delivering the best services and experiences for our users.
+          We offer top-notch services in web development, mobile app development,
+          and more.
           </p>
         </div>
 

@@ -17,7 +17,7 @@ function SignUpForm({ toggleSignUpForm }) {
           <input type="password" placeholder="Enter your password" required />
           <label>Confirm Password</label>
           <input type="password" placeholder="Confirm your password" required />
-          <button type="submit">Sign Up</button>
+          <button type="submit" className="btn">Sign Up</button>
         </form>
       </div>
     </div>

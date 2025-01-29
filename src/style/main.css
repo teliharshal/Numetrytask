@@ -8,22 +8,27 @@
 }
 
 :root {
-    --mainColor: 	#717882;
-    --mainColorLight: #40507A;
-    --secondaryColor: #131f2f;
-    --textColor: #eee;
+  --navbar-bg: aquamarine; /* Dark semi-transparent */
+  --footer-bg: rgba(0, 0, 0, 0.7); /* Dark semi-transparent */
+  --text-color: #ffffff; /* White text */
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 2rem;
-    align-items: center;
-    background-color: var(--mainColor); 
-    color: var(--textColor);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  align-items: center;
+  background-color: blanchedalmond; /* Set background to white */
+  color: #29335C; /* Dark text color for visibility */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for attractiveness */
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 header .logo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -31,6 +36,7 @@ header .logo {
 }
 
 nav {
+    background-color: blanchedalmond;
     display: flex;
     gap: 2rem;
 }
@@ -43,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondaryColor);
+    color: var(--navbar-bg);
 }
 
 header .nav-btn {
@@ -60,6 +66,8 @@ header .nav-btn {
 @media only screen and (max-width: 1024px) {
     header .nav-btn {
         display: block;
+        visibility: visible;
+        opacity: 1;
     }
 
     nav {
@@ -168,20 +176,16 @@ header .nav-btn {
 /* Apply Flex Layout to Body */
 /* Apply Flex Layout to Body */
 body {
-    display: flex;
-    flex-direction: column; /* Stacks child elements vertically */
-    min-height: 100vh; /* Ensures the body fills the entire viewport */
-    margin: 0;
-  }
-  
-  /* Main content styling */
-  main {
-    flex-grow: 1; /* Makes the main content grow and take available space */
-    padding: 2rem;
-    margin-top: 3rem; /* Adds space between navbar and content */
-    margin-bottom: 3rem; /* Adds space between content and footer */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Push the footer to bottom by allowing main content to take up remaining space */
+main {
+  flex: 1;
+}
+
   /* Image container styling */
   .image-container {
     text-align: center;
@@ -202,11 +206,14 @@ body {
   
   /* Footer Styling */
   footer {
-    background-color: var(--mainColor);
-    color: var(--textColor);
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-    margin-top: auto; /* Ensures the footer stays at the bottom */
+    background-color: #E3F2FD;
+    background: #29335C; /* Restore to the original navbar color */
+    color: #eee; /* Light text */
+    text-align: center;
+    padding: 1.5rem 0; /* More padding for better spacing */
+    width: 100%;
+    position: relative; /* Change from absolute */
+    bottom: 0;
   }
   
   .footer-container {
@@ -228,7 +235,7 @@ body {
   }
   
   .footer-container a:hover {
-    color: var(--secondaryColor);
+    color: var(--navbar-bg);
   }
   
   .footer-container ul {
@@ -254,4 +261,4 @@ body {
       text-align: center;
     }
   }
-  
+

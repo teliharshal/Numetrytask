@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; 
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../style/main.css";
 import LoginForm from "./LoginForm"; // Import Login Form component
@@ -28,10 +29,12 @@ function Navbar() {
       <header>
         <h3>Logo</h3>
         <nav className={isNavOpen ? "responsive_nav" : ""}>
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
           <a href="#services">Services</a>
-          <a href="#">Contact Us</a>
+          <Link to="/contact">Contact Us</Link>
+          {/* Other links */}
+        
 
           {/* Login Button */}
           <a href="#" onClick={toggleLoginForm}>

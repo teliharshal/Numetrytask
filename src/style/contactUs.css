@@ -1,0 +1,69 @@
+/* General styling for the contact form */
+
+.contact-form-container {
+    background-image: url('C:\Users\Personal\Desktop\numetryform\public\background-banner-picture-image_1055931.jpg');
+    width: 100%;
+    max-width: 400px; /* Adjusted size for smaller form */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content */
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #29335C;
+  }
+  
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers form fields horizontally */
+  }
+  
+  .contact-form-container label {
+    margin-bottom: 5px;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    text-align: left;
+    width: 100%; /* Ensure label spans entire width */
+    padding-left: 10px; /* For better alignment */
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+    width: 90%; /* Make fields smaller */
+    max-width: 350px; /* Ensure input field doesn't grow too wide */
+  }
+  
+  .contact-form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-form-container button {
+    padding: 10px 15px;
+    background-color: #29335C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size for the button */
+    cursor: pointer;
+    align-self: center; /* Centers the button horizontally */
+    margin-top: 10px;
+    width: 90%; /* Button width same as the input fields */
+    max-width: 350px; /* Ensure button width matches input fields */
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #D82839;
+  }
+  

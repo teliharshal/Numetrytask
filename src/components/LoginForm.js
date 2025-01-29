@@ -13,7 +13,7 @@ function LoginForm({ toggleLoginForm, toggleSignUpForm }) {
           <input type="email" placeholder="Enter your email" required />
           <label>Password</label>
           <input type="password" placeholder="Enter your password" required />
-          <button type="submit">Login</button>
+          <button type="submit" className="btn">Login</button>
         </form>
         <p>
           Not a member?{" "}
