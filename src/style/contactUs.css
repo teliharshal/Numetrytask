@@ -1,7 +1,7 @@
 /* General styling for the contact form */
 
 .contact-form-container {
-    background-image: url('C:\Users\Personal\Desktop\numetryform\public\background-banner-picture-image_1055931.jpg');
+    /* background-image: url('C:\Users\Personal\Desktop\numetryform\public\background-banner-picture-image_1055931.jpg'); */
     width: 100%;
     max-width: 400px; /* Adjusted size for smaller form */
     margin: 40px auto;

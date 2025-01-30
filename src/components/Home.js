@@ -1,21 +1,43 @@
 // src/components/Home.js
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // Import Swiper CSS
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Link } from 'react-router-dom';
-import "../style/home.css"; // Add the new styles for home page
+import "../style/home.css";
+
+
+import { EffectFade, Navigation, Pagination } from "swiper/modules";// Add the new styles for home page
 
 const Home = () => {
+
   return (
     <div className="home">
+   <Swiper
+      modules={[EffectFade, Navigation, Pagination]}
+      effect="fade"
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      className="fullpage-slider"
+    >
        {/* Hero Section */}
+       <SwiperSlide>
        <section className="hero-section">
+        <marquee direction="up" >
         <h1>Welcome to Our Website</h1>
         <p>
           We are dedicated to providing the best web solutions for your needs.
           Explore our services and let us help you grow your online presence.
         </p>
+        </marquee>
       </section>
+      </SwiperSlide>
 
-
+      <SwiperSlide>
       <section className="info-section">
         <h2>About Our Services</h2>
         <p>
@@ -51,7 +73,9 @@ const Home = () => {
             </p>
           </div>
         </div>
+        
       </section>
+      </SwiperSlide>
 
    <section className="get-in-touch">
   <div className="get-in-touch-content">
@@ -64,7 +88,11 @@ const Home = () => {
         </Link>
         </div>
       </section>
+  
+
+      </Swiper>
     </div>
+   
   );
 };
 

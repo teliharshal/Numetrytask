@@ -3,12 +3,10 @@
   
 .home {
     background-color: #f4f4f4; /* Change this to your desired background */
-    min-height: 100vh; /* Ensures full page height */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Pushes content to fill space */
-    margin: 0; /* Remove margins */
-    padding: 0; /* Remove paddings */
+
   }
   
   
@@ -16,11 +14,11 @@
 
 /* Hero Section Styling */
 .hero-section {
-    background-image: url('C:\Users\Personal\Desktop\numetryform\public\background-banner-picture-image_1055931.jpg'); /* Choose your desired color */
-    /* min-height: 100vh; /* Ensures it covers the full screen */
-    /* padding: 20px;  */ 
+    background-image: url('C:\Users\Personal\Desktop\numetryform\public\background-banner-icture-image_1055931.jpg'); /* Choose your desired color */
+    
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 150px 20px; 
     text-align: center;
@@ -206,3 +204,55 @@
     background-color: #D82839;
   }
   
+
+  /* Make each section full-screen */
+  .section {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+/* Add different background colors for each section */
+
+
+.about-section {
+  background: #ff6b6b;
+  color: white;
+}
+
+.services-section {
+  background: #4ecdc4;
+  color: white;
+}
+
+.contact-section {
+  background: #1a535c;
+  color: white;
+}
+
+.fullpage-slider {
+  width: 100vw;
+  height: 500px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+}
+
+
+.about-section,
+.services-section,
+.contact-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}

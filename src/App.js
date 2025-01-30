@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; 
 import ContactUs from './components/ContactUs';
+import AboutUs from './components/AboutUs';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/navbar'; 
@@ -21,7 +22,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
 
         {/* Other routes */}
-        {/* <Route path="/about" element={<AboutUs />} /> */}
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
 
       {/* Footer - Unchanged */}

@@ -26,7 +26,7 @@ function Navbar() {
 
   return (
     <>
-      <header>
+      <header className="header">
         <h3>Logo</h3>
         <nav className={isNavOpen ? "responsive_nav" : ""}>
           <Link to="/">Home</Link>
