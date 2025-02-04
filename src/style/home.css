@@ -1,258 +1,62 @@
-/* src/style/home.css */
-
-  
-.home {
-    background-color: #f4f4f4; /* Change this to your desired background */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Pushes content to fill space */
-
-  }
-  
-  
+/* src/style/home.css */  
  /* src/style/home.css */
 
-/* Hero Section Styling */
-.hero-section {
-    background-image: url('C:\Users\Personal\Desktop\numetryform\public\background-banner-icture-image_1055931.jpg'); /* Choose your desired color */
-    
+ .hero-section {
+    background-image: url("C:\Users\Personal\Desktop\numetryform\public\gradient-technology-futuristic-background_23-2149115236.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    padding: 150px 20px; 
-    text-align: center;
-    position: relative;
-  }
-  
-  .hero-section h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); Adds a shadow to make text pop */
-    color: #29335C; /* Ensures text color is white */
-  }
-  
-  .hero-section p {
-    font-size: 1.5rem;
-    margin-top: 0;
-    line-height: 1.6;
-    color: #0c0a0a; /* A lighter shade for the paragraph */
-    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); Shadow for better readability */
-    margin-bottom: 30px;
-  }
-  
-  
-  /* Responsive Text Adjustments */
-  @media (max-width: 1024px) {
-    .hero-section h1 {
-      font-size: 2.5rem; /* Adjust font size on smaller screens */
-    }
-  
-    .hero-section p {
-      font-size: 1.2rem; /* Adjust font size for paragraphs */
-    }
-  
-    .cta-btn {
-      font-size: 1rem; /* Adjust button text size */
-    }
-  }
-  
-/* About Our Services Section */
-.info-section {
-    background-color: #E3F2FD; /* Light background for the section */
-    padding: 60px 20px; /* Add some padding for spacing */
-    text-align: center;
-  }
-  
-  .info-section h2 {
-    font-size: 2.5rem;
-    color: #29335C; /* Dark blue for the heading */
-    margin-bottom: 20px;
-  }
-  
-  .info-section p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  
-  /* Card Section */
-  .service-cards {
-    background-color: #E3F2FD;
+    height: 90vh;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  
-  .service-card {
-    background-color: #E3F2FD;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .service-card h3 {
-    font-size: 1.8rem;
-    color: #29335C;
-    margin-bottom: 10px;
-  }
-  
-  .service-card p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .service-card {
-      width: 45%; /* Two cards per row */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .service-card {
-      width: 100%; /* One card per row */
-    }
-  }
-  
-  .contact-us {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .contact-us h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact-us p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
-  }
-  
-  .contact-us button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #29335C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact-us button:hover {
-    background-color: #D82839;
-  }
-  
-
-  /* Get in touch section css */
-  .get-in-touch {
-
-    text-align: center; 
-   background-color: #E3F2FD; /* Light background */
-    padding: 3rem 2rem; /* Reduce padding to remove extra gap */
-    margin-bottom: 0; /* Ensure no additional space below */
-  }
-  
-  .get-in-touch-content {
-    max-width: 800px; 
-    margin: 0 auto; /* Center content horizontally */
-  }
-  
-  .get-in-touch h2 {
-    font-size: 2rem;
-    color: #29335C;
-    margin-bottom: 1rem;
-  }
-  
-  .get-in-touch p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1rem; /* Reduced spacing below text */
-  }
-  
-  .get-in-touch button {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    background-color: #29335C;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .get-in-touch button:hover {
-    background-color: #D82839;
-  }
-  
-
-  /* Make each section full-screen */
-  .section {
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
   }
-  
 
-/* Add different background colors for each section */
+  .hero-section p{
+      align-items: center;
+      justify-content: center;
+      font-size: medium;
+  }
 
-
-.about-section {
-  background: #ff6b6b;
-  color: white;
+  .about-company {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: flex-start; /* Aligns heading with first line of paragraph */
+    gap: 15px; /* Space between heading and paragraph */
 }
 
-.services-section {
-  background: #4ecdc4;
-  color: white;
+.about-company h3 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0 ;
+    min-width: 150px; /* Ensures heading is aligned properly */
+    text-align: left;
 }
 
-.contact-section {
-  background: #1a535c;
-  color: white;
+.about-company p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0 0 20px 0 ;
 }
 
-.fullpage-slider {
-  width: 100vw;
-  height: 500px;
-}
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    .about-company {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center;
+    }
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 500px;
-}
+    .about-company h3 {
+        min-width: unset; /* Allows it to be flexible on small screens */
+        text-align: left;
+        margin-bottom: 10px;
+    }
 
-
-.about-section,
-.services-section,
-.contact-section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; 
+    .about-company p {
+        text-align: left;
+        max-width: 100%;
+    }
 }

@@ -6,6 +6,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/navbar'; 
 import Home from "./components/Home"; 
+import Services from './components/services';
 import Footer from "./components/Footer";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
 
         {/* Other routes */}
         <Route path="/about" element={<AboutUs />} />
+
+        <Route path="/services" element={<Services/>} />
       </Routes>
 
       {/* Footer - Unchanged */}

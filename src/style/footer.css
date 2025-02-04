@@ -1,6 +1,6 @@
 footer {
-  background-color: blanchedalmond; /* Your footer color */
-  color: black;
+  background-color: #334155; /* Your footer color */
+  color: #ffff;
   text-align: center;
   padding: 10px 0;
   width: 100%;
@@ -27,7 +27,7 @@ footer {
   }
   
   .footer-container a:hover {
-    color: var(--secondaryColor);
+    color: black;
   }
   
   .footer-container ul {
@@ -51,6 +51,39 @@ footer {
     .footer-container {
       flex-direction: column;
       text-align: center;
+      align-items: center;
+    }
+    .logo {
+      order: -1;
+      /* margin: 0 auto; */
+      margin-left: 90px;
+      transform: scale(0.8);
     }
   }
+
+
+  .logo{
+    margin-top: -95px;
+    margin-bottom: -75px;
+    margin-left: -79px;
+    transform: scale(0.4);
+  }
+ 
+
+  .footer-left{
+   margin-left: -75px;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+  }
+
+  .footer-center{
+      margin-left: -79px;
+  }
+
+  .footer-right{
+    margin-left: -79px;
+  }
+
+
   

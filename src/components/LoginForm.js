@@ -1,29 +1,62 @@
-import React from "react";
+import { useState } from "react";
+// import "../style/LoginForm.css"; // Ensure you have styles for the modal
 
-function LoginForm({ toggleLoginForm, toggleSignUpForm }) {
+const LoginForm = ({ toggleLoginForm, toggleSignUpForm, toggleForgotPassword }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showSuccess, setShowSuccess] = useState(false); // Success popup state
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    if (email.trim() === "" || password.trim() === "") {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    alert("Login Successful!"); // Show success alert
+    toggleLoginForm(); // Close the login form
+  };
+ 
+
   return (
     <div className="modal">
       <div className="modal-content">
-        <span className="close-btn" onClick={toggleLoginForm}>
-          &times;
-        </span>
+        <span className="close-btn" onClick={toggleLoginForm}>&times;</span>
         <h2>Login</h2>
-        <form>
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" required />
-          <label>Password</label>
-          <input type="password" placeholder="Enter your password" required />
-          <button type="submit" className="btn">Login</button>
+        
+        <form onSubmit={handleLogin}>
+          <label>Email:</label>
+          <input 
+            type="email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <label>Password:</label>
+          <input 
+            type="password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+
+          <button type="submit">Login</button>
         </form>
-        <p>
-          Not a member?{" "}
-          <button className="link-btn" onClick={toggleSignUpForm}>
-            Sign Up
-          </button>
+
+        <p onClick={toggleForgotPassword} className="forgot-password">
+          Forgot Password?
+        </p>
+        <p onClick={toggleSignUpForm} className="signup-link">
+          Don't have an account? Register.
         </p>
       </div>
+
+      {/* Success Popup */}
+      {showSuccess && <div className="popup">Login Successful!</div>}
     </div>
   );
-}
+};
 
 export default LoginForm;

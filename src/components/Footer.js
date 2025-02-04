@@ -1,14 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../style/footer.css";
 
 function Footer() {
   return (
     <footer>
       <div className="footer-container">
+        <div className="logo">
+       <img src="https://numetry.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-09-04-at-12.13.58.jpeg" alt="footerLogo"></img>
+        </div>
         <div className="footer-left">
           <h3>About Us</h3>
           <p>
-          We offer top-notch services in web development, mobile app development,
+          We offer top-notch services in web development,<br></br> 
+          mobile app development,
           and more.
           </p>
         </div>
@@ -16,10 +21,10 @@ function Footer() {
         <div className="footer-center">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+           <li><Link to="/">Home</Link></li>
+           <li><Link to="/about">About Us</Link></li> 
+           <li><Link to="/services">Services</Link></li>
+           <li><Link to="/contact">Contact Us</Link></li> 
           </ul>
         </div>
 
