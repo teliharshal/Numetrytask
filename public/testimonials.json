@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "feedback": "This product changed my life! Highly recommended.",
+    "image": "https://www.aiscribbles.com/img/variant/large-preview/28034/?v=9a6b13",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "feedback": "Excellent service and support. Will buy again!",
+    "image": "https://images.aiscribbles.com/2c47dfce70cb4674818eb9f9f474ff3c.png?v=e6c93b",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "feedback": "Amazing quality and fast delivery. Very satisfied!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGa5lcU2FE6ySG-5imjRGLYR3nCKJtDReDw&s",
+    "rating": 5
+  }
+]
