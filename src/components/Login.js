@@ -23,7 +23,7 @@ const Login = () => {
     };
 
     return (
-        <div className="text-white">
+        <div className="text-black">
             <h2 className="text-center text-2xl mb-2">Login</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <input type="email" placeholder="Email" className="w-full p-2 border rounded" onChange={(e) => setEmail(e.target.value)} required />
